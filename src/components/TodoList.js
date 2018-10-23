@@ -13,8 +13,9 @@ export default class TodoListComponent {
   }
 
   handleAddClick(inputValue) {
-    if (inputValue.trim()) {
-      this.taskList.push(inputValue);
+    const value = inputValue.trim();
+    if (value) {
+      this.taskList.push(value);
       this.mount();
     }
   }
